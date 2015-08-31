@@ -28,3 +28,10 @@ node_modules
 
 # Webstorms Folders
 .idea/
+
+
+# Environment config files
+build-env.js
+
+# Compiled Files
+web/
