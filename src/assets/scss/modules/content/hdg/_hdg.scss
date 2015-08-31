@@ -1,0 +1,12 @@
+$_BASE_SIZE: 32px;
+$_MULTIPLIER: 4;
+
+.hdg {
+    font-weight: $FONT_WEIGHT_BOLD;
+}
+
+@for $i from 0 through 5 {
+    .hdg_#{$i + 1} {
+        font-size: $_BASE_SIZE - ($_MULTIPLIER * $i);
+    }
+}
