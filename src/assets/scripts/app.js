@@ -3,4 +3,13 @@
 import React from 'react';
 import HelloWorld from './components/HelloWorld';
 
-React.render(<HelloWorld />, document.body);
+export default class App {
+    constructor() {
+
+        this.init();
+    }
+
+    init() {
+        React.render(<HelloWorld />, document.body);
+    }
+}

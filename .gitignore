@@ -35,3 +35,7 @@ build-env.js
 
 # Compiled Files
 web/
+.tmp/
+
+# Vendor libraries
+src/assets/vendor/
