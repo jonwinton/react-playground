@@ -18,6 +18,7 @@
     "reflux": "^0.2.12"
   },
   "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
     "babelify": "^6.3.0",
     "browserify": "^11.0.1",
     "browserify-shim": "^3.8.10",
@@ -28,7 +29,13 @@
     "grunt-contrib-copy": "^0.8.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-force": "^1.0.0",
+    "grunt-postcss": "^0.6.0",
     "grunt-sass": "^1.0.0",
     "jit-grunt": "^0.9.1"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
   }
 }
