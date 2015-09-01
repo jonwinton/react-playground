@@ -34,12 +34,17 @@
 require.config({
     paths: {
         requirejs: '../vendor/requirejs/require',
-        react: '../vendor/react/react'
+        react: '../vendor/react/react',
+        jquery: '../vendor/jquery/dist/jquery'
     },
     shim: {
         react: {
             exports: 'React'
+        },
+        jquery: {
+            exports: '$'
         }
+
     },
     waitSeconds: 120,
     packages: [

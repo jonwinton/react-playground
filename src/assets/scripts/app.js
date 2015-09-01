@@ -1,7 +1,6 @@
-'use strict';
-
 import React from 'react';
 import HelloWorld from './components/HelloWorld';
+import HelloController from './controllers/HelloController';
 
 export default class App {
     constructor() {
@@ -10,6 +9,10 @@ export default class App {
     }
 
     init() {
-        React.render(<HelloWorld />, document.body);
+        //React.render(
+        //    <HelloWorld />, // Var that's a class
+        //    document.body // Location to put it
+        //);
+        this.controller = new HelloController();
     }
 }
